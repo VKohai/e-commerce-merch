@@ -1,3 +1,4 @@
+@import "./sass/fonts.scss";
 @import "./sass/variables.scss";
 
 * {
@@ -7,6 +8,23 @@
     font-size: 16px;
     line-height: 150%;
     color: $light-color;
+    font-family: "Comfortaa";
+}
+
+body {
+    background: $dark-color;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.row {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
 }
 
 h1,
