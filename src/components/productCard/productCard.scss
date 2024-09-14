@@ -1,0 +1,34 @@
+@import "../../sass/variables.scss";
+
+.card {
+    width: 261px;
+    border-radius: 4px;
+    overflow: hidden;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        background: $dark-lighter-color;
+    }
+
+    &__img {
+        width: 100%;
+
+        img {
+            width: inherit;
+            object-fit: fill;
+        }
+    }
+
+    &__name,
+    &__price {
+        text-align: center;
+    }
+
+    &__price {
+        font-weight: 700;
+        font-size: 20px;
+    }
+}
