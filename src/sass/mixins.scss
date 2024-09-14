@@ -1,7 +1,9 @@
 @mixin pointer {
     display: flex;
     gap: 8px;
+    justify-content: center;
     align-items: center;
+    transition: all .3s ease-out;
 
     &::after {
         content: '';
@@ -11,5 +13,9 @@
         background: url("../icons/Pointer.svg");
         width: 14px;
         height: 14px;
+    }
+
+    &:hover {
+        gap: 16px;
     }
 }
