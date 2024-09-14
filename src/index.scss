@@ -1,5 +1,6 @@
 @import "./sass/fonts.scss";
 @import "./sass/variables.scss";
+@import "./sass/buttons.scss";
 
 * {
     margin: 0;
@@ -9,6 +10,8 @@
     line-height: 150%;
     color: $light-color;
     font-family: "Comfortaa";
+    list-style-type: none;
+    text-decoration: none;
 }
 
 body {
