@@ -2,7 +2,8 @@
 
 This web app was desgined to allow authors (artists, podcasters, bloggers etc) to sell their merch products without any platfrom's comission.
 
-See the design of the application on [my Behance](https://www.behance.net/gallery/207538301/E-Commerce-Merch-Website-UIUX)
+![Design Preview](https://github.com/VKohai/e-commerce-merch/blob/main/public/Preview.png?raw=true)
+See the full design of the application on [my Behance](https://www.behance.net/gallery/207538301/E-Commerce-Merch-Website-UIUX)
 
 ## User Experience (UX)
 
