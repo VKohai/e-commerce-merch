@@ -24,7 +24,10 @@
         }
 
         &-img {
-            grid-column: 8/13;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
