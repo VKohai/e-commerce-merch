@@ -8,8 +8,20 @@ function App() {
         <>
             <AppHeader />
             <main className="main">
-                <ShowcaseSlider />
-                <ProductList />
+                <div className="catalog">
+                    <div className="catalog__item">
+                        <ShowcaseSlider />
+                    </div>
+                    <div className="catalog__item">
+                        <ProductList />
+                    </div>
+                    <div className="catalog__item">
+                        <ProductList catalogName="Шоперы" />
+                    </div>
+                    <div className="catalog__item">
+                        <ProductList catalogName="Худи, толстовки" />
+                    </div>
+                </div>
             </main>
             <AppFooter />
         </>
