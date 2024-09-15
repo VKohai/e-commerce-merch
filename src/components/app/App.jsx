@@ -1,3 +1,4 @@
+import AppFooter from "../appFooter/AppFooter";
 import AppHeader from "../appHeader/AppHeader";
 import ProductList from "../productList/ProductList";
 
@@ -8,6 +9,7 @@ function App() {
             <main className="main">
                 <ProductList />
             </main>
+            <AppFooter />
         </>
     );
 }
