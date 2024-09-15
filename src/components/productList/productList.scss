@@ -1,0 +1,9 @@
+.products {
+    &__title {
+        margin-bottom: 32px;
+    }
+
+    .row {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

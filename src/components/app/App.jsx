@@ -1,11 +1,12 @@
 import AppHeader from "../appHeader/AppHeader";
+import ProductList from "../productList/ProductList";
 
 function App() {
     return (
         <>
             <AppHeader />
-            <main className="App">
-
+            <main className="main">
+                <ProductList />
             </main>
         </>
     );

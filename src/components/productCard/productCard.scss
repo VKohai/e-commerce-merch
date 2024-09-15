@@ -6,20 +6,29 @@
     overflow: hidden;
 
     &__wrapper {
-        display: flex;
+        height: 100%;
         flex-direction: column;
         gap: 16px;
-        align-items: center;
         background: $dark-lighter-color;
     }
 
     &__img {
-        width: 100%;
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         img {
-            width: inherit;
+            width: 100%;
             object-fit: fill;
         }
+    }
+
+    &__info {
+        width: 100%;
+        margin: 16px 0;
     }
 
     &__name,
@@ -30,5 +39,6 @@
     &__price {
         font-weight: 700;
         font-size: 20px;
+        margin: 4px 0 0 0;
     }
 }

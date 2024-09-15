@@ -28,6 +28,18 @@ body {
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
+    grid-auto-rows: auto;
+}
+
+.main {
+    margin-top: 32px;
+    padding-top: calc(48px + 64px);
+}
+
+.catalog {
+    &__item {
+        margin-bottom: 80px;
+    }
 }
 
 h1,
