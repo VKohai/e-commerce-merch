@@ -1,50 +1,20 @@
 import "./productList.scss"
 import ProductCard from "../productCard/ProductCard";
 
-const ProductList = () => {
+const Productdivst = () => {
     return (
         <section className="products">
             <div className="container">
-                <ul className="catalog">
-                    <li className="catalog__item">
-                        <h2 className="products__title">Футболки</h2>
-                        <div className="row">
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                        </div>
-                    </li>
-                    <li className="catalog__item">
-                        <h2 className="products__title">Шоперы</h2>
-                        <div className="row">
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                        </div>
-                    </li>
-                    <li className="catalog__item">
-                        <h2 className="products__title">Худи, толстовки</h2>
-                        <div className="row">
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                        </div>
-                    </li>
+                <h2 className="products__title">Футболки</h2>
+                <ul className="row">
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
                 </ul>
             </div>
         </section>
@@ -52,4 +22,4 @@ const ProductList = () => {
     )
 }
 
-export default ProductList;
+export default Productdivst;

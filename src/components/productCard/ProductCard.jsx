@@ -3,7 +3,7 @@ import shibari from "../../img/Shibari_front.png";
 
 const ProductCard = () => {
     return (
-        <div className="card">
+        <li className="card">
             <div className="card__wrapper">
                 <div className="card__img">
                     <img src={shibari} alt={"Product image"} />
@@ -14,7 +14,7 @@ const ProductCard = () => {
                 </div>
                 <a href="#" className="btn btn_wide btn_pointer">Подробнее</a>
             </div>
-        </div>
+        </li>
     )
 }
 
