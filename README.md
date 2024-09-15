@@ -21,11 +21,11 @@ The webapp is made on React.JS. React.JS is a library that allows to build user 
 * Adaptation to any screen.
 
 To run the project you need to install Node.js. Download the repository and open the project folder in your terminal. Then enter the following command:
-```bash
+```powershell
 npm i
 ```
-After thath start the project:
-```bash
+After that start the project:
+```powershell
 npm start
 ```
 
@@ -33,5 +33,5 @@ Do you like the project? Leave a star on this repository!
 
 ## Get in touch with me
 1. [Telegram](https://t.me/VKohai)
-2. [Instagram](https://instagram/VKohai)
+2. [Instagram](https://instagram.com/VKohai)
 3. [G-mail](vkohai.it.business@gmail.com)
