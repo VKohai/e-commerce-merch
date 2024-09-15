@@ -9,6 +9,7 @@
     padding: 4px 16px;
     font-weight: bold;
     text-align: center;
+    cursor: pointer;
 
     &:active {
         background: $dark-lighter-color;
@@ -33,5 +34,12 @@
 
     &_pointer {
         @include pointer;
+    }
+
+    &_round {
+        border-radius: 50%;
+        padding: 0;
+        width: 32px;
+        height: 32px;
     }
 }
