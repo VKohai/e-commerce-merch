@@ -9,8 +9,11 @@ function App() {
         <>
             <AppHeader />
             <main className="main">
-                <Product />
                 <div className="catalog">
+                    <div className="catalog__item">
+                        <Product />
+
+                    </div>
                     <div className="catalog__item">
                         <ShowcaseSlider />
                     </div>

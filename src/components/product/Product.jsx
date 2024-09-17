@@ -1,11 +1,13 @@
 import "./product.scss";
+import Slider from "./slider/Slider";
+
 
 const Product = () => {
     return (
         <section className="product">
             <div className="container">
                 <div className="row">
-                    <div className="slider"></div>
+                    <Slider />
                     <div className="product__details">
                         <h1 className="product__title">Shibari</h1>
                         <div className="product__description">

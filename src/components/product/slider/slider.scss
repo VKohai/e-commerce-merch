@@ -1,0 +1,78 @@
+@import "../../../sass/variables.scss";
+
+.slider {
+    grid-column: 1/8;
+
+    &__content {
+        background: $dark-lighter-color;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 32px;
+        height: 72px;
+
+        #prev {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        width: 100%;
+    }
+
+    &__dot {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s ease-in;
+        width: 56px;
+        height: 56px;
+
+        img {
+            width: inherit;
+            object-fit: fill;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 64px;
+            height: 64px;
+
+            border-radius: 100%;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            background: $dark-lighter-color;
+            z-index: -1;
+        }
+
+        &_active {
+            width: 90px;
+            height: 90px;
+
+            &::after {
+                background: $primary-color;
+                width: 76px;
+                height: 76px;
+            }
+        }
+    }
+
+    &__slide {
+        width: 100%;
+
+        img {
+            object-fit: fill;
+        }
+    }
+}
