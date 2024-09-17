@@ -1,6 +1,7 @@
 @import "./sass/fonts.scss";
 @import "./sass/variables.scss";
 @import "./sass/buttons.scss";
+@import "./sass/grid.scss";
 
 * {
     margin: 0;
@@ -25,18 +26,7 @@ button {
     border: none;
 }
 
-.container {
-    width: 1140px;
-    margin: 0 auto;
-}
 
-.row {
-    display: grid;
-    gap: 32px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    grid-auto-rows: auto;
-}
 
 .main {
     margin-top: 32px;

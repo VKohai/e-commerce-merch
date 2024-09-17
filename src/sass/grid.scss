@@ -1,0 +1,12 @@
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.row {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+}

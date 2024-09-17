@@ -1,0 +1,56 @@
+@import "../../sass/variables.scss";
+
+.product {
+    &__details {
+        grid-column: 8/13;
+    }
+
+    &__description {
+        color: $secondary-color;
+        margin-top: 16px;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 16px;
+        margin-top: 40px;
+    }
+
+    &__sizes {
+        padding: 8px;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: 2px solid $secondary-color;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 14px;
+            height: 14px;
+            background: url("../../icons/Pointer.svg");
+            transition: all .3s ease-out;
+        }
+
+        &_active {
+            &::after {
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    .btn {
+        &:active {
+            &::before {
+                border: none;
+            }
+        }
+    }
+
+    &__price {
+        span {
+            color: inherit;
+        }
+    }
+}

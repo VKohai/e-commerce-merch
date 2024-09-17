@@ -1,5 +1,6 @@
 import AppFooter from "../appFooter/AppFooter";
 import AppHeader from "../appHeader/AppHeader";
+import Product from "../product/Product";
 import ProductList from "../productList/ProductList";
 import ShowcaseSlider from "../showcaseSlider/ShowcaseSlider";
 
@@ -8,6 +9,7 @@ function App() {
         <>
             <AppHeader />
             <main className="main">
+                <Product />
                 <div className="catalog">
                     <div className="catalog__item">
                         <ShowcaseSlider />
