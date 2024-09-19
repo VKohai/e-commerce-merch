@@ -17,6 +17,10 @@
     list-style-type: none;
     text-decoration: none;
     letter-spacing: 2px;
+
+    &::selection {
+        color: $primary-color;
+    }
 }
 
 body {
