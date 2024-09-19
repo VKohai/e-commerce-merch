@@ -2,6 +2,7 @@ import AppFooter from "../appFooter/AppFooter";
 import AppHeader from "../appHeader/AppHeader";
 import Product from "../product/Product";
 import ProductList from "../productList/ProductList";
+import ShoppingCart from "../shoppingCart/ShoppingCart";
 import ShowcaseSlider from "../showcaseSlider/ShowcaseSlider";
 
 function App() {
@@ -11,8 +12,10 @@ function App() {
             <main className="main">
                 <div className="catalog">
                     <div className="catalog__item">
+                        <ShoppingCart />
+                    </div>
+                    <div className="catalog__item">
                         <Product />
-
                     </div>
                     <div className="catalog__item">
                         <ShowcaseSlider />
