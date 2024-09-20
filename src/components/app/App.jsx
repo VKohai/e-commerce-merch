@@ -10,9 +10,9 @@ import ShowcaseSlider from "../showcaseSlider/ShowcaseSlider";
 function App() {
     return (
         <>
-            <AppHeader />
+            {/* <AppHeader /> */}
             <main className="main">
-                <PaymentForm />
+                {/* <PaymentForm /> */}
                 {/* <div className="catalog">
                     <div className="catalog__item">
                         <ShoppingCart />

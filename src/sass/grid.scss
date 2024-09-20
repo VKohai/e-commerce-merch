@@ -27,3 +27,19 @@
         width: 720px;
     }
 }
+
+@media (max-width: 720px) {
+    .container {
+        width: 540px;
+    }
+}
+
+@media (max-width: 540px) {
+    .container {
+        width: none;
+    }
+
+    .row {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
