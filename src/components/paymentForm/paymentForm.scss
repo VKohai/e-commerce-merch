@@ -1,0 +1,55 @@
+@import "../../sass/variables.scss";
+
+.payment {
+    &__wrapper {
+        grid-column: 4/10;
+
+        input {
+            box-sizing: border-box;
+            padding: 16px;
+            width: 100%;
+            background: $dark-lighter-color;
+            border: none;
+            border-radius: 4px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 16px 0;
+            margin-top: 16px;
+        }
+
+        &-address {
+            display: flex;
+            gap: 16px;
+
+            input {
+                &:first-child {
+                    min-width: 70%;
+                }
+            }
+        }
+    }
+}
+
+#apartament {
+    min-width: 20%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1140px) {
+    .payment {
+        &__wrapper {
+            grid-column: 1/7;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .payment {
+        &__wrapper {
+            grid-column: 1/7;
+        }
+    }
+}
