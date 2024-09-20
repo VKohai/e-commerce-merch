@@ -1,6 +1,7 @@
 import AppFooter from "../appFooter/AppFooter";
 import AppHeader from "../appHeader/AppHeader";
 import Product from "../product/Product";
+import PaymentForm from "../paymentForm/PaymentForm";
 import ProductCard from "../productCard/ProductCard";
 import ProductList from "../productList/ProductList";
 import ShoppingCart from "../shoppingCart/ShoppingCart";
@@ -11,10 +12,7 @@ function App() {
         <>
             <AppHeader />
             <main className="main">
-                <ShowcaseSlider />
-                <div className="container">
-
-                </div>
+                <PaymentForm />
                 {/* <div className="catalog">
                     <div className="catalog__item">
                         <ShoppingCart />
@@ -36,7 +34,7 @@ function App() {
                     </div>
                 </div> */}
             </main>
-            {/* <AppFooter /> */}
+            <AppFooter />
         </>
     );
 }
