@@ -19,3 +19,36 @@
         gap: 16px;
     }
 }
+
+@mixin close-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        position: relative;
+        width: 32px;
+        height: 32px;
+        display: block;
+        cursor: pointer;
+    }
+
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 28px;
+        height: 2px;
+        background: $light-color;
+        cursor: pointer;
+    }
+
+    &::after {
+        transform: rotate(45deg);
+    }
+
+    &::before {
+        transform: rotate(-45deg);
+    }
+}

@@ -1,0 +1,54 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: $dark-lighter-color;
+    z-index: -1;
+}
+
+.menu {
+    position: relative;
+
+    #menu__close {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        right: 32px;
+        top: 32px;
+        @include close-icon;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 32px 0;
+    }
+
+    &__logo {
+        width: 130px;
+        margin-bottom: 24px;
+
+        img {
+            width: inherit;
+            object-fit: contain;
+        }
+    }
+
+    .btn {
+        font-size: 14px;
+        margin-top: 14px;
+    }
+
+    .nav {
+        &__menu {
+            flex-direction: column;
+        }
+    }
+}
