@@ -9,6 +9,11 @@ const AppHeader = () => {
                     <a href="#" className="header__logo">
                         <img src={logo} alt="logo" />
                     </a>
+                    <div id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <NavMenu />
                     <a href="#" className="btn btn_pointer">Корзина</a>
                 </div>

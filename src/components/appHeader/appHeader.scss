@@ -30,6 +30,19 @@
         }
     }
 
+    #hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+
+        span {
+            height: 1px;
+            width: 16px;
+            background-color: $light-color;
+            margin: 3px 0;
+        }
+    }
+
     .btn {
         font-weight: 500;
         grid-column: 11/13;
@@ -91,6 +104,44 @@
 
     .nav {
         grid-column: 2/6;
+
+        &__menu {
+            gap: 24px;
+
+            &-item {
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .header {
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__logo {
+            width: fit-content;
+        }
+
+        .btn {
+            grid-column: 6/7;
+            font-size: 14px;
+            padding: 4px;
+            display: none;
+        }
+
+        #hamburger {
+            display: flex;
+        }
+    }
+
+    .nav {
+        display: none;
 
         &__menu {
             gap: 24px;

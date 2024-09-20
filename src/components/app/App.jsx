@@ -10,7 +10,7 @@ import ShowcaseSlider from "../showcaseSlider/ShowcaseSlider";
 function App() {
     return (
         <>
-            {/* <AppHeader /> */}
+            <AppHeader />
             <main className="main">
                 {/* <PaymentForm /> */}
                 {/* <div className="catalog">
@@ -34,7 +34,7 @@ function App() {
                     </div>
                 </div> */}
             </main>
-            <AppFooter />
+            {/* <AppFooter /> */}
         </>
     );
 }
