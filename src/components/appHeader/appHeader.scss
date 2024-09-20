@@ -26,7 +26,7 @@
         width: 80%;
 
         img {
-            width: inherit;
+            object-fit: contain;
         }
     }
 
@@ -54,6 +54,50 @@
 
                 &:hover {
                     color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1140px) {
+    .header {
+        &__logo {
+            grid-column: 1/2;
+        }
+
+        .btn {
+            grid-column: 6/7;
+        }
+    }
+
+    .nav {
+        grid-column: 2/6;
+    }
+}
+
+@media (max-width: 960px) {
+    .header {
+        &__logo {
+            grid-column: 1/2;
+        }
+
+        .btn {
+            grid-column: 6/7;
+            font-size: 14px;
+        }
+    }
+
+    .nav {
+        grid-column: 2/6;
+
+        &__menu {
+            gap: 24px;
+
+            &-item {
+                a {
+                    font-size: 14px;
                 }
             }
         }

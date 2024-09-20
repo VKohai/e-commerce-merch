@@ -10,7 +10,7 @@ function App() {
         <>
             <AppHeader />
             <main className="main">
-                <div className="catalog">
+                {/* <div className="catalog">
                     <div className="catalog__item">
                         <ShoppingCart />
                     </div>
@@ -29,9 +29,9 @@ function App() {
                     <div className="catalog__item">
                         <ProductList catalogName="Худи, толстовки" />
                     </div>
-                </div>
+                </div> */}
             </main>
-            <AppFooter />
+            {/* <AppFooter /> */}
         </>
     );
 }
