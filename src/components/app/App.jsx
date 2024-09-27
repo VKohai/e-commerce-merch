@@ -15,7 +15,7 @@ function App() {
             {/* <HamburgerMenu /> */}
             <main className="main">
                 {/* <ShoppingCart /> */}
-                <PaymentForm />
+                {/* <PaymentForm /> */}
                 <Product />
                 {/* <div className="catalog">
                     <div className="catalog__item">

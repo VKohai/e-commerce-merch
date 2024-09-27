@@ -20,6 +20,7 @@
         padding: 8px;
         width: fit-content;
         display: flex;
+        justify-content: center;
         align-items: center;
         gap: 8px;
         border: 2px solid $secondary-color;
@@ -63,12 +64,28 @@
     }
 }
 
+@media (max-width: 720px) {
+    .product {
+        &__actions {
+            gap: 0;
+            justify-content: space-between;
+        }
+    }
+}
+
 @media (max-width: 540px) {
     .product {
         &__actions {
+            flex-direction: column-reverse;
+            gap: 16px;
+
             .btn {
                 font-size: 14px;
             }
+        }
+
+        &__sizes {
+            width: 95%;
         }
     }
 }
