@@ -11,11 +11,12 @@ import HamburgerMenu from "../hamburgerMenu/HamburgerMenu";
 function App() {
     return (
         <>
-            {/* <AppHeader /> */}
-            <HamburgerMenu />
+            <AppHeader />
+            {/* <HamburgerMenu /> */}
             <main className="main">
                 {/* <ShoppingCart /> */}
-                {/* <PaymentForm /> */}
+                <PaymentForm />
+                <Product />
                 {/* <div className="catalog">
                     <div className="catalog__item">
                     </div>
@@ -36,7 +37,7 @@ function App() {
                     </div>
                 </div> */}
             </main>
-            {/* <AppFooter /> */}
+            <AppFooter />
         </>
     );
 }

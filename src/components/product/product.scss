@@ -54,3 +54,21 @@
         }
     }
 }
+
+@media (max-width: 1140px) {
+    .product {
+        &__details {
+            grid-column: 1/7;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .product {
+        &__actions {
+            .btn {
+                font-size: 14px;
+            }
+        }
+    }
+}

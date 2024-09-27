@@ -5,6 +5,10 @@
 
     &__content {
         background: $dark-lighter-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
     }
 
     &__actions {
@@ -25,6 +29,7 @@
         align-items: center;
         gap: 24px;
         width: 100%;
+        overflow: hidden;
     }
 
     &__dot {
@@ -70,9 +75,48 @@
 
     &__slide {
         width: 100%;
+        text-align: center;
+        display: none;
+        padding: 12px;
+
+        &_active {
+            display: block;
+        }
 
         img {
-            object-fit: fill;
+            width: 90%;
+            object-fit: contain;
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    .slider {
+        grid-column: 1/7;
+
+        &__actions {
+            justify-content: center;
+            gap: 32px;
+        }
+
+        &__dots {
+            width: fit-content;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .slider {
+
+        &__actions {
+            justify-content: center;
+            gap: 24px;
+        }
+
+        &__dots {
+            padding: 4px;
+            justify-content: flex-start;
+            width: 75%;
         }
     }
 }

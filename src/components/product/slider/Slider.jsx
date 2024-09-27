@@ -7,6 +7,7 @@ const Slider = () => {
         <div className="slider">
             <div className="slider__wrapper">
                 <div className="slider__content">
+                    <Slide isActive={true} />
                     <Slide />
                 </div>
                 <div className="slider__actions">
@@ -38,9 +39,10 @@ const Slider = () => {
     )
 }
 
-const Slide = () => {
+const Slide = ({ isActive }) => {
+    const clazz = "slider__slide" + (isActive ? " slider__slide_active" : "");
     return (
-        <div className="slide__slide">
+        <div className={clazz}>
             <img src={shibariFront} alt="" />
         </div>
     )
