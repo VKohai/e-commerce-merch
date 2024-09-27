@@ -6,7 +6,7 @@ const Productdivst = ({ catalogName = "Футболки" }) => {
         <section className="products">
             <div className="container">
                 <h2 className="products__title">{catalogName}</h2>
-                <ul className="row">
+                <ul className="products__items">
                     <ProductCard />
                     <ProductCard />
                     <ProductCard />

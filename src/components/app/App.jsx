@@ -16,7 +16,8 @@ function App() {
             <main className="main">
                 {/* <ShoppingCart /> */}
                 {/* <PaymentForm /> */}
-                <Product />
+                {/* <Product /> */}
+                <ProductList />
                 {/* <div className="catalog">
                     <div className="catalog__item">
                     </div>
@@ -27,7 +28,6 @@ function App() {
                         <ShowcaseSlider />
                     </div>
                     <div className="catalog__item">
-                        <ProductList />
                     </div>
                     <div className="catalog__item">
                         <ProductList catalogName="Шоперы" />

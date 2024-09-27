@@ -3,7 +3,36 @@
         margin-bottom: 32px;
     }
 
-    .row {
-        grid-template-columns: repeat(4, 1fr);
+    &__items {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .products {
+        &__items {
+            gap: 32px 64px;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .products {
+        &__items {
+            justify-content: space-between;
+            gap: 16px;
+        }
+    }
+}
+
+
+@media (max-width: 720px) {
+    .products {
+        &__items {
+            gap: 32px 16px;
+        }
     }
 }

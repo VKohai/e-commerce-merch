@@ -22,7 +22,7 @@
 
         img {
             width: 100%;
-            object-fit: fill;
+            object-fit: contain;
         }
     }
 
@@ -39,5 +39,28 @@
     &__price {
         font-size: 20px;
         margin: 4px 0 0 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .card {
+        width: 350px;
+    }
+}
+
+@media (max-width: 720px) {
+    .card {
+        width: fit-content;
+
+        &__img {
+            width: 240px;
+            height: 240px;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .card {
+        width: 100%;
     }
 }
