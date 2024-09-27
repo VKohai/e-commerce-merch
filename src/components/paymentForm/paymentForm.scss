@@ -15,6 +15,11 @@
             margin-bottom: 20px;
         }
 
+        .form-error {
+            color: $primary-color;
+            font-size: 14px;
+        }
+
         .btn {
             padding: 16px 0;
             margin-top: 16px;
@@ -50,6 +55,32 @@
     .payment {
         &__wrapper {
             grid-column: 1/7;
+        }
+    }
+}
+
+
+@media (max-width: 540px) {
+    .payment {
+        &__wrapper {
+            input {
+                font-size: 14px;
+            }
+
+            &-address {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .payment {
+        &__wrapper {
+            input {
+                font-size: 12px;
+            }
         }
     }
 }
