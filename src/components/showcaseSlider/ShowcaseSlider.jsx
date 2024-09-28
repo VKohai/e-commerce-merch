@@ -31,7 +31,7 @@ const Slide = () => {
         <div className="showcase__slide">
             <div className="row">
                 <div className="showcase__slide-info">
-                    <h2 className="showcase__slide-title">Футболка Shibari</h2>
+                    <h2 className="showcase__slide-title title title_fz40">Футболка Shibari</h2>
                     <div className="showcase__slide-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</div>
                     <a href="#" className="btn btn_pointer btn_shadow">Подробнее</a>
                 </div>

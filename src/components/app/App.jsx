@@ -14,10 +14,11 @@ function App() {
             <AppHeader />
             {/* <HamburgerMenu /> */}
             <main className="main">
+                <ShowcaseSlider />
                 {/* <ShoppingCart /> */}
                 {/* <PaymentForm /> */}
                 {/* <Product /> */}
-                <ProductList />
+                {/* <ProductList /> */}
                 {/* <div className="catalog">
                     <div className="catalog__item">
                     </div>

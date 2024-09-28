@@ -12,3 +12,31 @@
         font-size: 24px;
     }
 }
+
+@media (max-width: 540px) {
+    .title {
+        font-size: 40px;
+
+        &_fz40 {
+            font-size: 24px;
+        }
+
+        &_fz24 {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .title {
+        font-size: 32px;
+
+        &_fz40 {
+            font-size: 24px;
+        }
+
+        &_fz24 {
+            font-size: 14px;
+        }
+    }
+}
