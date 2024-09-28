@@ -55,10 +55,6 @@
     margin: 0 auto;
     grid-column: 3/11;
 
-    &_hidden {
-        display: none;
-    }
-
     &__menu {
         display: flex;
         gap: 32px;

@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import logo from "../../icons/Logo.svg";
 import "./appHeader.scss";
 
-const AppHeader = () => {
+const AppHeader = ({ toggleHamburger }) => {
+
     return (
         <header className="header">
             <div className="container">
@@ -10,7 +11,7 @@ const AppHeader = () => {
                     <Link to="/" className="header__logo">
                         <img src={logo} alt="logo" />
                     </Link>
-                    <div id="hamburger">
+                    <div id="hamburger" onClick={toggleHamburger}>
                         <span></span>
                         <span></span>
                         <span></span>

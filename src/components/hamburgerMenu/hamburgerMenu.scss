@@ -1,18 +1,33 @@
 @import "../../sass/variables.scss";
 @import "../../sass/mixins.scss";
 
+
 .overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: $dark-lighter-color;
-    z-index: -1;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: all .4s ease-in;
+
+    &_visible {
+        transform: translateX(0);
+    }
 }
 
 .menu {
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 1001;
+    transform: translateX(100%);
+    transition: all .5s ease-in;
+
+    &_visible {
+        transform: translateX(0);
+    }
 
     #menu__close {
         position: absolute;
@@ -43,12 +58,15 @@
 
     .btn {
         font-size: 14px;
-        margin-top: 14px;
+        margin-top: 20px;
     }
 
     .nav {
+        display: block;
+
         &__menu {
             flex-direction: column;
+            gap: 16px;
         }
     }
 }
