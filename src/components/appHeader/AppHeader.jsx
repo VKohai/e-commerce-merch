@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../../icons/Logo.svg";
 import "./appHeader.scss";
 
@@ -6,16 +7,16 @@ const AppHeader = () => {
         <header className="header">
             <div className="container">
                 <div className="row">
-                    <a href="#" className="header__logo">
+                    <Link to="/" className="header__logo">
                         <img src={logo} alt="logo" />
-                    </a>
+                    </Link>
                     <div id="hamburger">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
                     <NavMenu />
-                    <a href="#" className="btn btn_pointer">Корзина</a>
+                    <Link to="/shoppingCart" className="btn btn_pointer">Корзина</Link>
                 </div>
             </div>
         </header>
@@ -29,7 +30,7 @@ export const NavMenu = () => {
         <nav className="nav">
             <ul className="nav__menu">
                 <li className="nav__menu-item">
-                    <a href="#">Каталог</a>
+                    <Link to="/">Каталог</Link>
                 </li>
                 <li className="nav__menu-item">
                     <a href="#">О нас</a>

@@ -7,39 +7,24 @@ import ProductList from "../productList/ProductList";
 import ShoppingCart from "../shoppingCart/ShoppingCart";
 import ShowcaseSlider from "../showcaseSlider/ShowcaseSlider";
 import HamburgerMenu from "../hamburgerMenu/HamburgerMenu";
+import MainPage from "../../pages/MainPage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
     return (
-        <>
+        <Router>
             <AppHeader />
             {/* <HamburgerMenu /> */}
             <main className="main">
-                <ShowcaseSlider />
-                {/* <ShoppingCart /> */}
-                {/* <PaymentForm /> */}
-                {/* <Product /> */}
-                {/* <ProductList /> */}
-                {/* <div className="catalog">
-                    <div className="catalog__item">
-                    </div>
-                    <div className="catalog__item">
-                        <Product />
-                    </div>
-                    <div className="catalog__item">
-                        <ShowcaseSlider />
-                    </div>
-                    <div className="catalog__item">
-                    </div>
-                    <div className="catalog__item">
-                        <ProductList catalogName="Шоперы" />
-                    </div>
-                    <div className="catalog__item">
-                        <ProductList catalogName="Худи, толстовки" />
-                    </div>
-                </div> */}
+                <Routes>
+                    <Route path="/" element={<MainPage />} />
+                    <Route path="product/:id" element={<Product />} />
+                    <Route path="shoppingCart/" element={<ShoppingCart />} />
+                    <Route path="payment/" element={<PaymentForm />} />
+                </Routes>
             </main>
             <AppFooter />
-        </>
+        </Router>
     );
 }
 

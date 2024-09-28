@@ -1,6 +1,7 @@
 import "./shoppingCart.scss";
 import shibari from "../../img/Shibari_front.png";
 import cross from "../../icons/Cross.svg";
+import { Link } from "react-router-dom";
 
 const ShoppingCart = () => {
     return (
@@ -31,8 +32,8 @@ const ShoppingCart = () => {
                             </div>
                         </div>
                         <div className="shoppingCart__actions">
-                            <a href="#" className="btn btn_pointer btn_disable">Продолжить покупки</a>
-                            <a href="#" className="btn btn_pointer">Перейти к оплате</a>
+                            <Link to="/" className="btn btn_pointer btn_disable">Продолжить покупки</Link>
+                            <Link to="/payment" className="btn btn_pointer">Перейти к оплате</Link>
                         </div>
                     </div>
                 </div>

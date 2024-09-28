@@ -1,5 +1,6 @@
 import "./productCard.scss";
 import shibari from "../../img/Shibari_front.png";
+import { Link } from "react-router-dom";
 
 const ProductCard = () => {
     return (
@@ -12,7 +13,7 @@ const ProductCard = () => {
                     <h3 className="card__name">Shibari</h3>
                     <div className="card__price">1.280₽</div>
                 </div>
-                <a href="#" className="btn btn_wide btn_pointer">Подробнее</a>
+                <Link to="/product/1" className="btn btn_wide btn_pointer">Подробнее</Link>
             </div>
         </li>
     )

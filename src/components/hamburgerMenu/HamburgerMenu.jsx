@@ -1,6 +1,7 @@
 import "./hamburgerMenu.scss";
 import logo from "../../icons/Logo.svg";
 import { NavMenu } from "../appHeader/AppHeader";
+import { Link } from "react-router-dom";
 
 const HamburgerMenu = () => {
     return (
@@ -15,7 +16,7 @@ const HamburgerMenu = () => {
                             <img src={logo} alt="" />
                         </div>
                         <NavMenu className="nav_active" />
-                        <a href="#" className="btn btn_pointer">Корзина</a>
+                        <Link to="/shoppingCart" className="btn btn_pointer">Корзина</Link>
                     </div>
                 </div>
             </div>
