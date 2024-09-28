@@ -1,7 +1,7 @@
 import "./productList.scss"
 import ProductCard from "../productCard/ProductCard";
 
-const Productdivst = ({ catalogName = "Футболки" }) => {
+const ProductList = ({ catalogName = "Футболки" }) => {
     return (
         <section className="products">
             <div className="container">
@@ -22,4 +22,4 @@ const Productdivst = ({ catalogName = "Футболки" }) => {
     )
 }
 
-export default Productdivst;
+export default ProductList;
